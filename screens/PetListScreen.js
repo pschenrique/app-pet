@@ -203,6 +203,15 @@ export default function PetListScreen({ route, navigation }) {
   </Text>
 </TouchableOpacity>
 
+<TouchableOpacity
+       style={styles.menuItem}
+       onPress={() => navigation.navigate('Castracao')}
+>
+  <Text style={styles.menuItemText}>
+    🐶 Castração Gratuita
+  </Text>
+</TouchableOpacity>
+
     <TouchableOpacity
       style={styles.closeButton}
       onPress={() => setMenuOpen(false)}
@@ -211,7 +220,9 @@ export default function PetListScreen({ route, navigation }) {
         Fechar
       </Text>
     </TouchableOpacity>
+
   </View>
+
 )}
       
       <FlatList
@@ -221,6 +232,16 @@ export default function PetListScreen({ route, navigation }) {
         contentContainerStyle={styles.listContainer}
         showsVerticalScrollIndicator={false}
       />
+
+      <TouchableOpacity
+        style={styles.bottomCenterButton}
+        onPress={() => navigation.navigate('Castracao')}
+      >
+      <Text style={styles.bottomCenterButtonText}>
+        🐶
+      </Text>
+      </TouchableOpacity>
+
     </View>
   );
 }
@@ -411,6 +432,28 @@ closeButtonText: {
   color: '#fff',
   fontWeight: 'bold',
   fontSize: 16,
+},
+
+bottomCenterButton: {
+  position: 'absolute',
+  bottom: 70,
+  alignSelf: 'center',
+
+  width: 70,
+  height: 70,
+
+  borderRadius: 35,
+
+  backgroundColor: '#4CAF50',
+
+  justifyContent: 'center',
+  alignItems: 'center',
+
+  elevation: 10,
+},
+
+bottomCenterButtonText: {
+  fontSize: 34,
 },
 
 });
