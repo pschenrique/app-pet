@@ -1,13 +1,13 @@
 import React from 'react';
 import { View, Text, Image, ScrollView } from 'react-native';
 
-export default function AlvarasScreen() {
+export default function ConsultasScreen() {
   return (
     <ScrollView style={{ flex: 1, padding: 20 }}>
 
       <Image
         source={{
-          uri: 'https://plus.unsplash.com/premium_photo-1669658981976-4b72e927a902'
+          uri: 'https://images.unsplash.com/photo-1683117927786-f146451082fb'
         }}
         style={{
           width: '100%',
@@ -17,19 +17,19 @@ export default function AlvarasScreen() {
       />
 
       <Text style={{ fontSize: 24, fontWeight: 'bold' }}>
-        Alvarás
+        Consultas
       </Text>
 
       <Text style={{ marginTop: 20 }}>
-        Alvará Sanitário Nº 12345
+        Olá! por aqui você pode marcar a consulta para castração de animal de estimação, use o e-mail abaixo para reservar um horário.
       </Text>
 
-      <Text>
-        Licença Ambiental Nº 67890
+     <Text style={{ marginTop: 20 }}>
+        adocaoamigofielconsulta@gmail.com
       </Text>
 
-      <Text>
-        Validade: 31/12/2026
+      <Text style={{ marginTop: 20 }}>
+        OBS: CARO USUÁRIO, DISPONIBILIZAMOS NOSSO ABRIGO PARA ONGS LOCAIS QUE REALIZAM CASTRAÇÃO GRATUITA. ESTAMOS DISPONÍVEIS AOS SÁBADOS E DOMINGOS DA ÚLTIMA SEMANA DE CADA MÊS.
       </Text>
       
     </ScrollView>
