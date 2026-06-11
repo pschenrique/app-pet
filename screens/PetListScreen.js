@@ -178,7 +178,7 @@ export default function PetListScreen({ route, navigation }) {
 
     <TouchableOpacity
   style={styles.menuItem}
-  onPress={() => navigation.navigate('Consulta')}
+  onPress={() => navigation.navigate('Consultas')}
 >
   <Text style={styles.menuItemText}>
     🔍 Consultas
