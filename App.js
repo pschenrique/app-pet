@@ -9,7 +9,7 @@ import { initDatabase } from './utils/database';
 import { ActivityIndicator, View } from 'react-native';
 import SobreScreen from './screens/SobreScreen';
 import EndrecoScreen from './screens/EnderecoScreen';
-import ConsultaScreen from './screens/ConsultasScreen';
+import ConsultasScreen from './screens/ConsultasScreen';
 import AlvaraScreen from './screens/AlvarasScreen';
 import ContatoScreen from './screens/ContatoScreen';
 import CastracaoScreen from './screens/CastracaoScreen';
@@ -67,8 +67,8 @@ export default function App() {
   component={EndrecoScreen}
 />
         <Stack.Screen
-  name="Consulta"
-  component={ConsultaScreen}
+  name="Consultas"
+  component={ConsultasScreen}
 />
         <Stack.Screen
   name="Alvara"
@@ -93,4 +93,3 @@ export default function App() {
     </NavigationContainer>
   );
 }
-
