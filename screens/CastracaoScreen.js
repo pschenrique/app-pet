@@ -26,11 +26,8 @@ export default function CastracaoScreen({ navigation }) {
       <Text style={[styles.text, { marginBottom: 20 }]}>
         Centro Veterinário Municipal{"\n"}
         Campanhas da Prefeitura{"\n"}
-        ONGs parceiras
-      </Text>
-
-      <Text style={styles.text}>
-        Disponibilazos nosso espaço para castração gratuita de seu animal, em todos os sábados da última semana do mês.
+        ONGs parceiras{"\n"}
+        Rua das Flores, 69 – Duque de Caxias. Disponibilizamos nosso abrigo para ONGs locais que realizam castração gratuita. Estamos disponíveis aos sábados e domingos da última semana de cada mês.
       </Text>
 
       <TouchableOpacity
