@@ -12,6 +12,7 @@ import EndrecoScreen from './screens/EnderecoScreen';
 import ConsultaScreen from './screens/ConsultasScreen';
 import AlvaraScreen from './screens/AlvarasScreen';
 import ContatoScreen from './screens/ContatoScreen';
+import CastracaoScreen from './screens/CastracaoScreen';
 
 const Stack = createStackNavigator();
 
@@ -77,6 +78,11 @@ export default function App() {
         <Stack.Screen
   name="Contato"
   component={ContatoScreen}
+/>
+
+        <Stack.Screen
+  name="Castracao"
+  component={CastracaoScreen}
 />
         <Stack.Screen 
           name="ResetPassword" 
